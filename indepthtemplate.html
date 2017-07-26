@@ -1,15 +1,22 @@
-<!DOCTYPE html>
+!DOCTYPE html>
 <html>
 <body>
 
-<title>Jamba Juice</title>
+<title>Jamba Juice Team Member</title>
 <div>
-<h1 align="right">Jamba Juice</h1>
+<h1 align="right">Jamba Juice Team Member</h1>
 </div>
+
+
+
 <div>
-<img src = "http://www.jambajuice.com/~/media/www/images/products/product/smoothies/classic-smoothies/aloha-pineapple-prod.ashx"</>
+<br><img src = "http://www.jambajuice.com/~/media/www/images/products/product/smoothies/classic-smoothies/aloha-pineapple-prod.ashx" width="230" height="250"</>
 </div>
 </body>
+
+<div class="rating">
+<span>☆</span><span>☆</span><span>☆</span><span>☆</span><span>☆</span>
+</div>
 
 <style>
 body {
@@ -18,10 +25,13 @@ body {
 
 div img {
 	border-radius: 50%;
+	width: 100; 
+	height: 100;
+	float: left;
 }
 
 h1 {
-	margin-right: 80px; 
+	margin-left: 450; 
     font-size: 50px; 
     color:#dc758f; 
     text-shadow: 4px 4px 0px rgba(0,0,0,0.1); 
@@ -33,8 +43,18 @@ div h1 {
     width: 300px;
     border: 25px solid #00ffcd;
     padding: 25px;
-    margin-left: 450px;
-    align: right;
+	margin-bottom: 0px;
+	margin-left:250px;
+	margin-right: 25px;
+	float: left;
+}
+.rating > span:hover:before {
+   content: "\2605";
+   position: absolute;
+}
+div.rating{
+	font-size: 50px;
+	
 }
    
 </style>
